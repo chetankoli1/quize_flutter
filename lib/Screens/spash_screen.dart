@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class SpashScreen extends StatefulWidget {
   const SpashScreen({Key? key}) : super(key: key);
 
@@ -22,8 +23,9 @@ class _SpashScreenState extends State<SpashScreen> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage('assets/images/splash_screen.png'),
-                  fit: BoxFit.fill),
+                image: AssetImage('assets/images/splash_screen.png'),
+                fit: BoxFit.fill,
+              ),
             ),
           ),
         ],
