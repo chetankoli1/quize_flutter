@@ -124,7 +124,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/mainscreen");
+                        },
                         child: const Padding(
                           padding: EdgeInsets.all(16.0),
                           child: Center(child: Text("Login")),
