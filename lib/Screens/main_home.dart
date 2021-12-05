@@ -173,7 +173,7 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                     ),
                     onTap: () {
-                      //Navigator.pushNamed(context, "/register");
+                     
                     },
                   )
                 ],
