@@ -128,7 +128,7 @@ class _UpdateEmailScreenState extends State<UpdateEmailScreen> {
                     Text(Consts.vText, textAlign: TextAlign.center),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),

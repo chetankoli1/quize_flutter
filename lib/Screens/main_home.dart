@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:quiz_flutter/Config/const.dart';
 import 'package:quiz_flutter/Widgets/appbars.dart';
@@ -22,7 +23,7 @@ class _MainScreenState extends State<MainScreen> {
           gradient: LinearGradient(
             colors: [
               Colors.white,
-              Colors.purple.shade50,
+              Colors.white,
               Colors.purple.shade200,
             ],
             end: Alignment.bottomCenter,
@@ -37,7 +38,12 @@ class _MainScreenState extends State<MainScreen> {
                 child: Container(
                   width: MediaQuery.of(context).size.width * 9,
                   height: 150.0,
-                  color: HexColor('#D4D4FF'),
+                  decoration: BoxDecoration(
+                    color: HexColor('#D4D4FF'),
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(10.0),
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(
@@ -50,7 +56,7 @@ class _MainScreenState extends State<MainScreen> {
                     padding: const EdgeInsets.all(15),
                     child: Text(
                       'Play Quiz',
-                      style: TextStyle(
+                      style: GoogleFonts.montserrat(
                           color: bColor,
                           fontSize: 14,
                           fontWeight: FontWeight.w500),
@@ -66,9 +72,7 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                     ),
                   ),
-                  onPressed: () {
-                    print('Pressed');
-                  },
+                  onPressed: () {},
                 ),
               ),
               const SizedBox(
@@ -77,11 +81,11 @@ class _MainScreenState extends State<MainScreen> {
               SizedBox(
                 width: MediaQuery.of(context).size.width * 0.5,
                 child: ElevatedButton(
-                  child: const Padding(
-                    padding: EdgeInsets.all(20),
+                  child: Padding(
+                    padding: const EdgeInsets.all(20),
                     child: Text(
                       'Play Demo',
-                      style: TextStyle(
+                      style: GoogleFonts.montserrat(
                           color: Colors.white,
                           fontSize: 14,
                           fontWeight: FontWeight.w500),
@@ -96,9 +100,7 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                     ),
                   ),
-                  onPressed: () {
-                    print('Pressed');
-                  },
+                  onPressed: () {},
                 ),
               ),
               const SizedBox(
@@ -159,21 +161,23 @@ class _MainScreenState extends State<MainScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
+                  Text(
                     "Rules and Guidelines.",
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
+                    style: GoogleFonts.montserrat(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   InkWell(
                     child: Text(
                       "READ HERE",
-                      style: TextStyle(
+                      style: GoogleFonts.montserrat(
                         color: Colors.purpleAccent.shade700,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     onTap: () {
-                     
+                      Navigator.pushNamed(context, "/datailscreen");
                     },
                   )
                 ],

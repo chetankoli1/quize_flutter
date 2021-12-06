@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_flutter/Screens/change_password_screen.dart';
+import 'package:quiz_flutter/Screens/edit_profile_screen.dart';
 import 'package:quiz_flutter/Screens/forgot_screen_email.dart';
 import 'package:quiz_flutter/Screens/forgot_screen_mobile.dart';
 import 'package:quiz_flutter/Screens/login_screen.dart';
 import 'package:quiz_flutter/Screens/main_home.dart';
 import 'package:quiz_flutter/Screens/register_screen.dart';
+import 'package:quiz_flutter/Screens/rule_datails_screen.dart';
 import 'package:quiz_flutter/Screens/spash_screen.dart';
 import 'package:quiz_flutter/Screens/update_email_screen.dart';
 
@@ -31,6 +33,8 @@ class MyApp extends StatelessWidget {
         '/changepass' : (context) => const ChangePasswordScreen(),
         '/updatemail' : (context) => const UpdateEmailScreen(),
         '/mainscreen' : (context) => const MainScreen(),
+        '/editprofile' : (context) => const EditProfileScreen(),
+        '/datailscreen' : (context) => const RuleDatailsScreen()
       },
     );
   }
